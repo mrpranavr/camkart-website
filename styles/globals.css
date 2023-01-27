@@ -16,6 +16,10 @@ body {
   background: linear-gradient(94.2deg, #0081F9 -0.28%, #C76AF2 105.06%);
 }
 
+.bg-gradient {
+  background: linear-gradient(109.84deg, rgba(0, 129, 249, 0.25) 0%, rgba(94, 0, 249, 0.3) 100%);
+}
+
 /* Animations */
 .sidebar {
   -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)

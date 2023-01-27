@@ -4,6 +4,8 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    './sections/**/*.{html,js,jsx}',
+    './styles/**/*.{js,jsx}',
  
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -24,7 +26,7 @@ module.exports = {
       ss: "620px",
       sm: "840px",
       md: "1060px",
-      lg: "1200px",
+      lg: "1350px",
       xl: "1700px",
     },
   },
