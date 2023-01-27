@@ -6,6 +6,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
     './sections/**/*.{html,js,jsx}',
     './styles/**/*.{js,jsx}',
+    "./node_modules/flowbite-react/**/*.js",
  
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -30,5 +31,17 @@ module.exports = {
       xl: "1700px",
     },
   },
-  plugins: [],
+  plugins: [
+    require("daisyui")
+  ],
+  daisyui: {
+    styled: true,
+    themes: false,
+    base: false,
+    utils: true,
+    logs: true,
+    rtl: false,
+    prefix: "",
+    darkTheme: "light",
+  },
 }

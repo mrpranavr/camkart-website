@@ -2,13 +2,23 @@ import styles from "@/styles";
 import { layout } from "@/styles";
 import { Button } from "@/components";
 import React from "react";
+import Carousel from "@/components/Carousel";
+
+const images = [
+  './hero-img.png',
+  './hero-img-2.png',
+  './hero-img-3.png',
+  './hero-img-4.png',
+  './hero-img-5.png',
+]
+
 
 const Hero = () => {
     return (
         <section className={`${styles.padding} bg-gradient`}>
-            <div className={`${layout.sectionReverse} ${styles.boxWidth} ${styles.paddingX} bg-white rounded-[30px]`}>
+            <div className={`${layout.sectionReverse} items-center justify-around ${styles.boxWidth} ${styles.paddingX} bg-white rounded-[30px]`}>
                 {/* left image */}
-                <div></div>
+                  <Carousel images={images} autoSlide={false}/>
 
                 {/* right side */}
                 <div className="flex flex-col items-center lg:items-start">
