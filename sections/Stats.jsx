@@ -10,11 +10,11 @@ const StatItem = ({ number, title, index }) => {
     return (
         <motion.div 
             variants={fadeIn('up', 'spring', 1.25 + index * 0.35, 0.75)}
-            className="flex justify-center space-x-[15px] items-center ml-[10px] mt-9">
-            <h1 className="font-poppins font-bold ss:text-[50px] text-[42px] text-gradient-1">
+            className="flex justify-center space-x-[10px] items-center ml-[10px] mt-9">
+            <h1 className="font-poppins font-bold sm:text-[50px] ss:text-[46px] text-[42px] text-gradient-1">
                 {number}
             </h1>
-            <h1 className="font-poppins font-semibold ss:text-[20px] text-[16px] max-w-[120px] text-lightBlue">
+            <h1 className="font-poppins font-semibold ss:text-[18px] text-[16px] max-w-[100px] text-lightBlue">
                 {title}
             </h1>
         </motion.div>
@@ -32,7 +32,7 @@ const Stats = () => {
                 absolute -top-20 sm:right-16 sm:left-16 right-6 left-6 card-shadow">
                 <div
                     className="flex justify-around px-20 pb-[34px] flex-wrap 
-                    lg:gap-x-[150px] gap-x-10"
+                    lg:gap-x-[150px] gap-x-8"
                 >
                     {stats.map((stat, index) => (
                         <StatItem key={stat.id} {...stat} index={index} />
