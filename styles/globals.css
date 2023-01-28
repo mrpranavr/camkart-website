@@ -11,6 +11,10 @@ body {
     box-sizing: border-box;
 }
 
+*{
+    scroll-behavior: smooth;
+}
+
 .button-gradient {
     background: linear-gradient(94.2deg, #0081f9 -0.28%, #c76af2 105.06%);
 }

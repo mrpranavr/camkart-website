@@ -83,7 +83,7 @@ const ShoppingCard = ({ index, img, title, amount, stars }) => {
 
 const Bestsellers = () => {
     return (
-        <section className={`${styles.padding} mt-20`}>
+        <section id='featured' className={`${styles.padding} mt-20`}>
             <motion.div
                 variants={staggerContainer}
                 initial="hidden"

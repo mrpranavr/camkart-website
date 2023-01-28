@@ -38,7 +38,7 @@ const Hero = () => {
                         Memories that <br className="xs:block hidden" /> never
                         fade <br className="xs:block hidden" /> away
                     </h1>
-                    <p className="font-poppins xs:text-[18px] text-[16px] text-lightBlue
+                    <p className="font-poppins ss:text-[18px] text-[16px] text-lightBlue
                      max-w-[554px] lg:text-start text-center mt-[36px]">
                         Lorem ipsum dolor sit amet consectetur. Leo enim quis
                         sed bibendum eget nulla cursus mus. Laoreet cursus

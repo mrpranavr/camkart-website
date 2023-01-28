@@ -30,7 +30,7 @@ const BenefitCard = ({ img, title, text, index }) => {
 
 const About = () => {
     return (
-        <section className={`${styles.paddingX} md:mt-[180px] sm:mt-[250px] ss:mt-[290px] mt-[350px]`}>
+        <section id='about' className={`${styles.paddingX} md:mt-[180px] sm:mt-[250px] ss:mt-[290px] mt-[350px]`}>
             <motion.div
                 variants={staggerContainer}
                 initial="hidden"
