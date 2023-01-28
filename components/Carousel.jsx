@@ -1,6 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 import React from "react";
+import {motion} from 'framer-motion'
+import {fadeIn } from "@/utils/motion";
 
 const Carousel = ({ images, autoSlide = false, autoSlideInterval = 5000 }) => {
     const [curr, setCurr] = useState(0);
@@ -22,7 +24,9 @@ const Carousel = ({ images, autoSlide = false, autoSlideInterval = 5000 }) => {
     }, []);
 
     return (
-        <div className="overflow-hidden relative lg:max-w-[580px] max-w-[610px] lg:mt-0 lg:mr-10 mt-[50px] xs:h-auto h-[280px]">
+        <motion.div 
+            variants={fadeIn('left', 'spring', 1, 2)} initial='hidden' whileInView='show'
+            className="overflow-hidden relative lg:max-w-[580px] max-w-[610px] lg:mt-0 lg:mr-10 mt-[50px] lg:h-[450px] xs:h-auto h-[280px]">
             <div
                 className="flex transition-transform ease-out duration-500"
                 style={{ transform: `translateX(-${curr * 100}%)` }}
@@ -59,7 +63,7 @@ const Carousel = ({ images, autoSlide = false, autoSlideInterval = 5000 }) => {
                     ))}
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

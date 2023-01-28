@@ -11,7 +11,7 @@ const Sidebar = ({toggleSideBar, toggleHandler}) => {
     }
 
     return (
-        <div className={`${toggleSideBar ? 'flex flex-col items-center' : 'hidden'} bg-white pt-[100px] pb-[50px] drop-shadow rounded-b-[20px] absolute w-full sidebar`}>
+        <div className={`${toggleSideBar ? 'flex flex-col items-center z-10' : 'hidden'} bg-white pt-[50px] pb-[50px] drop-shadow rounded-b-[20px] absolute top-[80px] w-full sidebar`}>
             <ul className="list-none flex flex-col items-center justify-end flex-1">
                 {navLinks.map((nav, index) => (
                     <li

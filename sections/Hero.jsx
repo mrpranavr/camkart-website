@@ -1,8 +1,13 @@
+'use client'
+
 import styles from "@/styles";
 import { layout } from "@/styles";
 import { Button } from "@/components";
 import React from "react";
 import Carousel from "@/components/Carousel";
+import {motion} from 'framer-motion'
+
+import { staggerContainer, fadeIn, sectionVariant } from "@/utils/motion";
 
 const images = [
   './hero-img.png',
@@ -15,13 +20,19 @@ const images = [
 
 const Hero = () => {
     return (
-        <section className={`sm:px-16 px-6 ${styles.paddingLg} ${styles.paddingMd} ${styles.paddingSm} ${styles.paddingSs} ${styles.paddingXs} py-4 bg-gradient`}>
-            <div className={`${layout.sectionReverse} items-center justify-around ${styles.boxWidth} sm:py-14 sm:px-14 px-6 bg-white rounded-[30px]`}>
+        <motion.section 
+        variants={sectionVariant(0.5, 0.5)} initial='hidden' whileInView='show' viewport={{once:true}}
+        className={`sm:px-16 px-6 ${styles.flexCenter} ${styles.paddingLg} ${styles.paddingMd} ${styles.paddingSm} ${styles.paddingSs} ${styles.paddingXs} pt-4 pb-[140px] bg-gradient`}>
+            <motion.div 
+              variants={staggerContainer} initial='hidden' whileInView='show'
+              className={`${layout.sectionReverse} items-center justify-around ${styles.boxWidth} sm:py-14 sm:px-14 px-6 bg-white rounded-[30px]`}>
                 {/* left image */}
                   <Carousel images={images} autoSlide={true}/>
 
                 {/* right side */}
-                <div className="flex flex-col items-center lg:items-start">
+                <motion.div
+                  variants={fadeIn('right', 'spring', 1, 2)}
+                  className="flex flex-col items-center lg:items-start">
                     <h1 className="font-poppins font-bold sm:text-[72px] 
                     lg:text-[72px] md:text-[80px] xs:text-[52px] text-[42px] lg:text-start text-center text-darkBlue">
                         Memories that <br className="xs:block hidden" /> never
@@ -39,9 +50,9 @@ const Hero = () => {
                         className="xs:ml-10 ml-5 font-poppins font-semibold xs:text-[18px] text-[16px] text-darkBlue"
                       >Get new deals</button>
                     </div>
-                </div>
-            </div>
-        </section>
+                </motion.div>
+            </motion.div>
+        </motion.section>
     );
 };
 

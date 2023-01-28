@@ -1,34 +1,45 @@
+'use client'
+
 import React from "react";
 import { stats } from "@/constants";
 import styles from "@/styles";
+import {motion} from 'framer-motion'
+import { staggerContainer, fadeIn } from "@/utils/motion";
 
-const StatItem = ({ number, title }) => {
+const StatItem = ({ number, title, index }) => {
     return (
-        <div className="flex justify-center space-x-[15px] items-center ml-[10px] mt-10">
-            <h1 className="font-poppins font-bold text-[50px] text-gradient-1">
+        <motion.div 
+            variants={fadeIn('up', 'spring', 1.25 + index * 0.35, 0.75)}
+            className="flex justify-center space-x-[15px] items-center ml-[10px] mt-9">
+            <h1 className="font-poppins font-bold ss:text-[50px] text-[42px] text-gradient-1">
                 {number}
             </h1>
-            <h1 className="font-poppins font-semibold text-[20px] max-w-[120px] text-lightBlue">
+            <h1 className="font-poppins font-semibold ss:text-[20px] text-[16px] max-w-[120px] text-lightBlue">
                 {title}
             </h1>
-        </div>
+        </motion.div>
     );
 };
 
 const Stats = () => {
     return (
-        <section className={`${styles.boxWidth} lg:px-0 ${styles.paddingX} relative`}>
-            <div className="bg-white rounded-[20px] flex justify-center w-full">
+        <motion.section 
+            variants={staggerContainer} initial='hidden' whileInView='show' viewport={{once:true}}
+            className={` lg:px-0 ${styles.paddingX} relative`}>
+            <motion.div 
+                variants={fadeIn('up', 'spring', 0.25, 1.5)}
+                className="bg-white xl:max-w-[1280px] mx-auto rounded-[20px] flex justify-center  
+                absolute -top-20 sm:right-16 sm:left-16 right-6 left-6 card-shadow">
                 <div
-                    className="flex flex-row justify-around 
-      px-20 pb-[34px] flex-wrap lg:gap-x-[150px] gap-x-10"
+                    className="flex justify-around px-20 pb-[34px] flex-wrap 
+                    lg:gap-x-[150px] gap-x-10"
                 >
-                    {stats.map((stat) => (
-                        <StatItem key={stat.id} {...stat} />
+                    {stats.map((stat, index) => (
+                        <StatItem key={stat.id} {...stat} index={index} />
                     ))}
                 </div>
-            </div>
-        </section>
+            </motion.div>
+        </motion.section>
     );
 };
 
