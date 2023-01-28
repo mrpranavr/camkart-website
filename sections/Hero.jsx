@@ -21,7 +21,7 @@ const images = [
 const Hero = () => {
     return (
         <motion.section 
-        variants={sectionVariant(0.5, 0.5)} initial='hidden' whileInView='show' viewport={{once:true}}
+        variants={sectionVariant(0.5, 0.5)} initial='hidden' whileInView='show' viewport={{once: false}}
         className={`sm:px-16 px-6 ${styles.flexCenter} ${styles.paddingLg} ${styles.paddingMd} ${styles.paddingSm} ${styles.paddingSs} ${styles.paddingXs} pt-4 pb-[140px] bg-gradient`}>
             <motion.div 
               variants={staggerContainer} initial='hidden' whileInView='show'
@@ -31,7 +31,7 @@ const Hero = () => {
 
                 {/* right side */}
                 <motion.div
-                  variants={fadeIn('right', 'spring', 1, 2)}
+                  variants={fadeIn('right', 'spring', 1, 1)}  initial='hidden' whileInView='show' viewport={{once: false}}
                   className="flex flex-col items-center lg:items-start">
                     <h1 className="font-poppins font-bold sm:text-[72px] 
                     lg:text-[72px] md:text-[80px] xs:text-[52px] text-[42px] lg:text-start text-center text-darkBlue">

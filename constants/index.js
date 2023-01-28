@@ -55,3 +55,27 @@ export const benefits = [
         text: 'Lorem ipsum dolor sit amet consectetur. Sapien '
     }
 ]
+
+export const bestsellers = [
+    {
+        id:'card-1',
+        img: '/headphones1.png',
+        title: 'Sony MX-1000',
+        stars: 4,
+        amount: '24,000'
+    },
+    {
+        id:'card-2',
+        img: '/cameraCard.png',
+        title: 'Nikon D5200',
+        stars: 4,
+        amount: '42,000'
+    },
+    {
+        id:'card-3',
+        img: '/droneCard.png',
+        title: 'DJI Drone v1',
+        stars: 4,
+        amount: '65,500'
+    }
+]

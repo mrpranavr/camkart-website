@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const BenefitCard = ({ img, title, text, index }) => {
     return (
-        <motion.div variants={fadeIn('right', 'spring', 1 + index * 0.35, 0.75)} initial='hidden' whileInView='show'
+        <motion.div variants={fadeIn('right', 'spring', index * 0.25, 0.75)} initial='hidden' whileInView='show'
         className="flex items-center">
             {/* icon */}
             <div className="relative xs:w-[70px] xs:h-[70px] w-[60px] h-[60px] p-2">

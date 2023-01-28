@@ -25,7 +25,7 @@ const Carousel = ({ images, autoSlide = false, autoSlideInterval = 5000 }) => {
 
     return (
         <motion.div 
-            variants={fadeIn('left', 'spring', 1, 2)} initial='hidden' whileInView='show'
+            variants={fadeIn('left', 'spring', 1, 1)} initial='hidden' whileInView='show' viewport={{once:false}}
             className="overflow-hidden relative lg:max-w-[580px] max-w-[610px] lg:mt-0 lg:mr-10 mt-[50px] lg:h-[450px] xs:h-auto h-[280px]">
             <div
                 className="flex transition-transform ease-out duration-500"
