@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -7,44 +6,56 @@
 
 html,
 body {
-  margin: none;
-  padding: none;
-  box-sizing: border-box;
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
 }
 
 .button-gradient {
-  background: linear-gradient(94.2deg, #0081F9 -0.28%, #C76AF2 105.06%);
+    background: linear-gradient(94.2deg, #0081f9 -0.28%, #c76af2 105.06%);
 }
 
 .bg-gradient {
-  background: linear-gradient(109.84deg, rgba(0, 129, 249, 0.25) 0%, rgba(94, 0, 249, 0.3) 100%);
+    background: linear-gradient(
+        109.84deg,
+        rgba(0, 129, 249, 0.25) 0%,
+        rgba(94, 0, 249, 0.3) 100%
+    );
+}
+
+.text-gradient-1 {
+    background: linear-gradient(99.84deg, #4fa8fa 2.27%, #8a00cb 99.43%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 
 /* Animations */
 .sidebar {
-  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-      both;
-  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+        both;
+    animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes slide-bottom {
-  0% {
-      -webkit-transform: translateY(-200px);
-      transform: translateY(-200px);
-  }
-  100% {
-      -webkit-transform: translateY(0px);
-      transform: translateY(0px);
-  }
+    0% {
+        -webkit-transform: translateY(-200px);
+        transform: translateY(-200px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
 }
 
 @keyframes slide-bottom {
-  0% {
-      -webkit-transform: translateY(-200px);
-      transform: translateY(-200px);
-  }
-  100% {
-      -webkit-transform: translateY(0px);
-      transform: translateY(0px);
-  }
+    0% {
+        -webkit-transform: translateY(-200px);
+        transform: translateY(-200px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
 }

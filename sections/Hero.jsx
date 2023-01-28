@@ -15,7 +15,7 @@ const images = [
 
 const Hero = () => {
     return (
-        <section className={`${styles.padding} bg-gradient`}>
+        <section className={`sm:px-16 px-6 ${styles.paddingLg} ${styles.paddingMd} ${styles.paddingSm} ${styles.paddingSs} ${styles.paddingXs} py-4 bg-gradient`}>
             <div className={`${layout.sectionReverse} items-center justify-around ${styles.boxWidth} sm:py-14 sm:px-14 px-6 bg-white rounded-[30px]`}>
                 {/* left image */}
                   <Carousel images={images} autoSlide={true}/>

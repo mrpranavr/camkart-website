@@ -10,6 +10,12 @@ const styles = {
     paddingX: "sm:px-16 px-6",
     paddingY: "sm:py-16 py-6",
     padding: "sm:px-16 px-6 sm:py-12 py-4",
+
+    paddingXs: 'xs:pt-4 xs:pb-[140px]',
+    paddingSs: 'ss:pt-16 ss:pb-[140px]',
+    paddingSm: 'sm:pt-16 sm:pb-[140px]',
+    paddingMd: 'md:pt-16 md:pb-[140px]',
+    paddingLg: 'lg:pt-16 lg:pb-[140px]',
   
     marginX: "sm:mx-16 mx-6",
     marginY: "sm:my-16 my-6",
