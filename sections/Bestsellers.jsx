@@ -47,7 +47,7 @@ const ShoppingCard = ({ index, img, title, amount, stars }) => {
                             <h1 className="font-poppins font-bold text-[14px] text-darkBlue">
                                 {title}
                             </h1>
-                            <p className="flex space-x-[3px]">
+                            <p className="flex space-x-[3px] mt-[6px]">
                                 {arr.map((_, i) => (
                                     <img key={i} src="/star.svg" alt="stars" />
                                 ))}
@@ -108,7 +108,7 @@ const Bestsellers = () => {
                 </div>
 
                 <motion.div
-                    variants={fadeIn("up", "spring", 1, 2)}
+                    variants={fadeIn("up", "spring", 0, 1)}
                     className="mt-[45px]"
                 >
                     <Button text="More products" styles="" />

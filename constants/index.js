@@ -61,14 +61,14 @@ export const bestsellers = [
         id:'card-1',
         img: '/headphones1.png',
         title: 'Sony MX-1000',
-        stars: 4,
+        stars: 3,
         amount: '24,000'
     },
     {
         id:'card-2',
         img: '/cameraCard.png',
         title: 'Nikon D5200',
-        stars: 4,
+        stars: 5,
         amount: '42,000'
     },
     {
