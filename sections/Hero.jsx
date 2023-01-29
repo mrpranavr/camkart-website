@@ -44,11 +44,11 @@ const Hero = () => {
                         Welcome to the one stop shop for all your creative needs. 
                         {/* Drones, cameras, microphones, you name it we got it ! */}
                     </p>
-                    <div className="flex mt-[36px]">
+                    <div className="flex mt-[36px] items-center">
                       <Button text='Shop now' styles='' />
-                      <button
+                      <a href='#featured'
                         className="xs:ml-10 ml-5 font-poppins font-semibold xs:text-[18px] text-[16px] text-darkBlue"
-                      >Get new deals</button>
+                      >Get new deals</a>
                     </div>
                 </motion.div>
             </motion.div>

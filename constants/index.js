@@ -101,7 +101,7 @@ export const testimonials = [
     },
     {
         id: "card-4",
-        review: "Very good service, expecially the delivery was great and product came unhindered.",
+        review: "They had just the tools I needed to jumpstart my business. Their customer support is also really good.",
         name: 'Steve',
         place: 'Brooklyn, US'
     },
@@ -157,3 +157,92 @@ export const partners = [
         img: '/sony.png'
     }
 ]
+
+export const footerLinks = [
+    {
+      title: "Useful Links",
+      links: [
+        {
+          name: "About us",
+          link: "https://www.camkart.com/content/",
+        },
+        {
+          name: "Explore",
+          link: "https://www.camkart.com/how-it-works/",
+        },
+        {
+          name: "Bestsellers",
+          link: "https://www.camkart.com/#featured",
+        },
+        {
+          name: "Refund policy",
+          link: "https://www.camkart.com/explore/",
+        },
+        {
+          name: "Terms & Services",
+          link: "https://www.camkart.com/terms-and-services/",
+        },
+      ],
+    },
+    {
+      title: "Community",
+      links: [
+        {
+          name: "Help Center",
+          link: "https://www.camkart.com/help-center/",
+        },
+        {
+          name: "Partners",
+          link: "https://www.camkart.com/partners/",
+        },
+        {
+          name: "Suggestions",
+          link: "https://www.camkart.com/suggestions/",
+        },
+        {
+          name: "Blog",
+          link: "https://www.camkart.com/blog/",
+        },
+        {
+          name: "Newsletters",
+          link: "https://www.camkart.com/newsletters/",
+        },
+      ],
+    },
+    {
+      title: "Partner",
+      links: [
+        {
+          name: "Our Partner",
+          link: "https://www.camkart.com/our-partner/",
+        },
+        {
+          name: "Become a Partner",
+          link: "https://www.camkart.com/become-a-partner/",
+        },
+      ],
+    },
+  ];
+
+  export const socialMedia = [
+    {
+      id: "social-media-1",
+      icon: '/instagram.svg',
+      link: "https://www.instagram.com/",
+    },
+    {
+      id: "social-media-2",
+      icon: '/facebook.svg',
+      link: "https://www.facebook.com/",
+    },
+    {
+      id: "social-media-3",
+      icon: '/twitter.svg',
+      link: "https://www.twitter.com/",
+    },
+    {
+      id: "social-media-4",
+      icon: '/linkedin.svg',
+      link: "https://www.linkedin.com/",
+    },
+  ];

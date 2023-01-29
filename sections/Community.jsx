@@ -21,7 +21,6 @@ const container = (direction, type, duration) => ({
             duration,
             ease: "easeOut",
             staggerChildren: 0.3,
-            staggerDirection: -1,
             delayChildren: 0.5,
         },
     },
@@ -91,6 +90,30 @@ const Community = () => {
 
                     <motion.div
                         variants={item}
+                        className="absolute top-1/2 left-[45%] w-[73px] h-[80px] "
+                    >
+                        <Image
+                            src="/mapUser.png"
+                            alt="people"
+                            fill
+                            className="w-full h-full"
+                        />
+                    </motion.div>
+
+                    <motion.div
+                        variants={item}
+                        className="absolute sm:top-10 xs:top-0 top-5 md:left-20 sm:left-10 left-20 w-[73px] h-[80px] "
+                    >
+                        <Image
+                            src="/mapUser-5.png"
+                            alt="people"
+                            fill
+                            className="w-full h-full"
+                        />
+                    </motion.div>
+
+                    <motion.div
+                        variants={item}
                         className="absolute sm:flex hidden md:bottom-20 md:right-20 bottom-[200px] right-0  w-[73px] h-[80px] "
                     >
                         <Image
@@ -115,27 +138,19 @@ const Community = () => {
 
                     <motion.div
                         variants={item}
-                        className="absolute sm:top-10 xs:top-0 top-5 md:left-20 sm:left-10 left-20 w-[73px] h-[80px] "
+                        className="absolute bottom-[150px] sm:flex hidden lg:left-[200px] md:left-[150px] left-[50px] w-[73px] h-[80px] "
                     >
                         <Image
-                            src="/mapUser-5.png"
+                            src="/mapUser-6.png"
                             alt="people"
                             fill
                             className="w-full h-full"
                         />
                     </motion.div>
 
-                    <motion.div
-                        variants={item}
-                        className="absolute top-1/2 left-[45%] w-[73px] h-[80px] "
-                    >
-                        <Image
-                            src="/mapUser.png"
-                            alt="people"
-                            fill
-                            className="w-full h-full"
-                        />
-                    </motion.div>
+            
+
+                    
                 </motion.div>
             </motion.div>
         </section>
