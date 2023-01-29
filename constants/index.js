@@ -20,7 +20,7 @@ export const navLinks = [
 export const stats = [
     {
         id: "stat1",
-        number: "15",
+        number: "21",
         title: "Countries",
     },
     {
