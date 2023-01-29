@@ -34,15 +34,15 @@ const Hero = () => {
                   variants={fadeIn('right', 'spring', 1, 1)}  initial='hidden' whileInView='show' viewport={{once: false}}
                   className="flex flex-col items-center lg:items-start">
                     <h1 className="font-poppins font-bold sm:text-[72px] 
-                    lg:text-[72px] md:text-[80px] xs:text-[52px] text-[42px] lg:text-start text-center text-darkBlue">
+                    lg:text-[72px] md:text-[80px] ss:text-[55px] xs:text-[52px] text-[42px] lg:text-start text-center text-darkBlue">
                         Memories that <br className="xs:block hidden" /> never
                         fade <br className="xs:block hidden" /> away
                     </h1>
                     <p className="font-poppins ss:text-[18px] text-[16px] text-lightBlue
                      max-w-[554px] lg:text-start text-center mt-[36px]">
-                        Lorem ipsum dolor sit amet consectetur. Leo enim quis
-                        sed bibendum eget nulla cursus mus. Laoreet cursus
-                        aliquet phasellus at vitae nunc eget imperdiet.
+                        Never let any of your moments slip away or an idea wasted. 
+                        Welcome to the one stop shop for all your creative needs. 
+                        {/* Drones, cameras, microphones, you name it we got it ! */}
                     </p>
                     <div className="flex mt-[36px]">
                       <Button text='Shop now' styles='' />

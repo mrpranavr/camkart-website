@@ -106,3 +106,54 @@ export const testimonials = [
         place: 'Brooklyn, US'
     },
 ];
+
+export const partners = [
+    {
+        id:'canon',
+        img: '/canon.png'
+    },
+    {
+        id:'dji',
+        img: '/dji.png'
+    },
+    {
+        id:'fujifilm',
+        img: '/fujifilm.png'
+    },
+    {
+        id:'goPro',
+        img: '/gopro.png'
+    },
+    {
+        id:'nikon',
+        img: '/nikon.png'
+    },
+    {
+        id:'sony',
+        img: '/sony.png'
+    },
+    {
+        id:'canon',
+        img: '/canon.png'
+    },
+    {
+        id:'dji',
+        img: '/dji.png'
+    },
+    {
+        id:'fujifilm',
+        img: '/fujifilm.png'
+    },
+    {
+        id:'goPro',
+        img: '/gopro.png'
+    },
+    {
+        id:'nikon',
+        img: '/nikon.png'
+    },
+    {
+        id:'sony',
+        img: '/sony.png'
+    }
+]

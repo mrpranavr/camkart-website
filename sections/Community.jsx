@@ -21,6 +21,7 @@ const container = (direction, type, duration) => ({
             duration,
             ease: "easeOut",
             staggerChildren: 0.3,
+            staggerDirection: -1,
             delayChildren: 0.5,
         },
     },
@@ -81,7 +82,7 @@ const Community = () => {
                         className="absolute top-20 right-20  w-[73px] h-[80px] "
                     >
                         <Image
-                            src="/mapUser.png"
+                            src="/mapUser-4.png"
                             alt="people"
                             fill
                             className="w-full h-full"
@@ -93,7 +94,7 @@ const Community = () => {
                         className="absolute sm:flex hidden md:bottom-20 md:right-20 bottom-[200px] right-0  w-[73px] h-[80px] "
                     >
                         <Image
-                            src="/mapUser.png"
+                            src="/mapUser-2.png"
                             alt="people"
                             fill
                             className="w-full h-full"
@@ -105,7 +106,7 @@ const Community = () => {
                         className="absolute top-[100px] md:flex hidden right-[500px] w-[73px] h-[80px] "
                     >
                         <Image
-                            src="/mapUser.png"
+                            src="/mapUser-3.png"
                             alt="people"
                             fill
                             className="w-full h-full"
@@ -117,7 +118,7 @@ const Community = () => {
                         className="absolute sm:top-10 xs:top-0 top-5 md:left-20 sm:left-10 left-20 w-[73px] h-[80px] "
                     >
                         <Image
-                            src="/mapUser.png"
+                            src="/mapUser-5.png"
                             alt="people"
                             fill
                             className="w-full h-full"
