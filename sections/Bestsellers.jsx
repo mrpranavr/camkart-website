@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, {useState} from "react";
 import { motion } from "framer-motion";
 import { staggerContainer, fadeIn } from "@/utils/motion";
 import { TypingText, TitleText, Button } from "@/components";
@@ -8,11 +8,13 @@ import styles from "@/styles";
 import { bestsellers } from "@/constants";
 import Image from "next/image";
 
-const ShoppingCard = ({ index, img, title, amount, stars }) => {
+const ShoppingCard = ({ index, img, title, amount, stars}) => {
+
     const arr = [...Array(stars).keys()];
 
     return (
         <motion.div
+
             variants={fadeIn("right", "spring", index * 0.15, 0.75)}
             initial="hidden"
             whileInView="show"
@@ -82,6 +84,9 @@ const ShoppingCard = ({ index, img, title, amount, stars }) => {
 };
 
 const Bestsellers = () => {
+
+
+
     return (
         <section id='featured' className={`${styles.padding} mt-20`}>
             <motion.div
