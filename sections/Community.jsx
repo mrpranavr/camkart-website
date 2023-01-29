@@ -57,7 +57,7 @@ const Community = () => {
                     title={
                         <>
                             Customers from all across
-                            <br className="md:block hidden" /> the Globe
+                            <br className="ss:block hidden" /> the Globe
                         </>
                     }
                     textStyles="text-center"

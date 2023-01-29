@@ -95,7 +95,7 @@ const Bestsellers = () => {
                     title={
                         <>
                             See the most popular
-                            <br className="md:block hidden" /> deals we offer
+                            <br className="ss:block hidden" /> deals we offer
                         </>
                     }
                     textStyles="text-center"
