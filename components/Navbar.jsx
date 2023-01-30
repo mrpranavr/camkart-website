@@ -37,7 +37,8 @@ const Navbar = ({ toggleNavBar, menuToggle }) => {
                 {navLinks.map((nav, index) => (
                     <li
                         key={nav.id}
-                        className={`font-poppins font-medium cursor-pointer md:text-[16px] text-[14px] text-textBlack ${
+                        className={`font-poppins font-medium cursor-pointer md:text-[16px] text-[14px] text-darkBlue 
+                        hover:underline hover:underline-offset-8 decoration-4 decoration-lightBlue/30 ${
                             index !== navLinks.length - 1
                                 ? "lg:mr-20 mr-10"
                                 : "mr-0"
@@ -49,13 +50,13 @@ const Navbar = ({ toggleNavBar, menuToggle }) => {
             </ul>
 
             <div className="sm:flex hidden ml-10 space-x-10 justify-end">
-                <button className="font-poppins font-semibold text-[16px]">
+                <button className="font-poppins font-semibold text-[16px] hover:scale-110 transition-transform duration-100 ease-in-out">
                     Log in
                 </button>
                 <button
                     className="font-poppins text-[16px] font-medium button-gradient
                lg:px-[30px] md:px-[15px] px-[10px] py-[10px] rounded-[10px] text-white 
-               hover:scale-105 hover:shadow-lg transition transform duration-100 ease-in-out"
+               hover:scale-110 hover:shadow-lg transition transform duration-100 ease-in-out"
                 >
                     Sign up
                 </button>
