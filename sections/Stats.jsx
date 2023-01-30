@@ -32,7 +32,7 @@ const Stats = () => {
                 absolute -top-20 sm:right-16 sm:left-16 right-6 left-6 card-shadow">
                 <div
                     className="flex justify-around px-20 pb-[34px] flex-wrap 
-                    lg:gap-x-[150px] gap-x-8"
+                    lg:gap-x-[150px] md:gap-x-[100px] sm:gap-x-[50px] gap-x-8"
                 >
                     {stats.map((stat, index) => (
                         <StatItem key={stat.id} {...stat} index={index} />
