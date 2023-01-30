@@ -31,7 +31,7 @@ const ShoppingCard = ({ index, img, title, amount, stars}) => {
           transition-all duration-200 ease-out"
         >
             {/* image */}
-            <div className="flex flex-col bg-white rounded-[17px] p-[30px]">
+            <div className="flex flex-col bg-white rounded-[17px] p-[20px]">
                 <div className="relative h-[272px] w-[284px]">
                     <Image
                         src={img}

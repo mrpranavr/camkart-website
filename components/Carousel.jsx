@@ -44,10 +44,10 @@ const Carousel = ({ images, autoSlide = false, autoSlideInterval = 5000 }) => {
 
             <div className="absolute inset-0 flex item-center justify-between xs:p-4 p-0">
                 <button onClick={prev}>
-                    <img src="/prev.svg" />
+                    <img src="/prev.svg" className="sm:h-auto ss:h-[20px] h-[15px]"/>
                 </button>
                 <button onClick={next}>
-                    <img src="/next.svg" />{" "}
+                    <img src="/next.svg" className="sm:h-auto ss:h-[20px] h-[15px]"/>{" "}
                 </button>
             </div>
 
