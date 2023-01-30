@@ -28,7 +28,7 @@ const Sidebar = ({toggleSideBar, toggleHandler}) => {
 
             <div className="mt-10 space-x-10">
               <button className="font-poppins font-semibold text-[16px] text-darkBlue hover:scale-110 transition-transform duration-100 ease-in-out">Log in</button>
-              <button className="font-poppins text-[16px] font-medium button-gradient px-[25px] py-[15px] rounded-[10px] text-white">Sign up</button>
+              <button className="font-poppins text-[16px] font-medium button-gradient px-[25px] py-[15px] rounded-[10px] text-white hover:scale-110 transition-transform duration-100 ease-in-out">Sign up</button>
             </div>
         </div>
     );
